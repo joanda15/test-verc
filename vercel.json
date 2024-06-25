@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+            "src": "./client",
+            "use": "@vercel/react"
+        },
+        {
+            "src": "./server",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
